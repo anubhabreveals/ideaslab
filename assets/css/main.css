@@ -2143,10 +2143,10 @@
 		@media screen and (max-width: 980px) {
 
 			.flex.flex-4 .col {
-				width: 48%;
+				width: 30%;
 			}
 			.flex.flex-5 .col {
-				width: 48%;
+				width: 30%;
 			}
 
 			.flex.flex-tabs ul {
@@ -2166,7 +2166,7 @@
 		@media screen and (max-width: 736px) {
 
 			.flex.flex-2 .col, .flex.flex-3 .col, .flex.flex-4 .col,.flex.flex-5 .col {
-				width: 100%;
+				width: 50%;
 				-moz-order: 2;
 				-webkit-order: 2;
 				-ms-order: 2;
