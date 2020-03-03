@@ -2166,7 +2166,7 @@
 		@media screen and (max-width: 736px) {
 
 			.flex.flex-2 .col, .flex.flex-3 .col, .flex.flex-4 .col,.flex.flex-5 .col {
-				width: 50%;
+				width: 70%;
 				-moz-order: 2;
 				-webkit-order: 2;
 				-ms-order: 2;
