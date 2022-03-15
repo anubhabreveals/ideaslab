@@ -1,0 +1,193 @@
+<!DOCTYPE HTML>
+<!--
+	Urban by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+<style>
+.filterDiv {
+  background-color: #F2F2F2;
+  color: black;
+  width: 100%;
+  line-height: auto;
+  text-align: justify;
+  overflow-wrap: anywhere;
+  margin: 2px;
+  display: none;
+  padding:5px;
+  
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  margin-right: 15px;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  color: white;
+  padding: 1px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #660000;
+  color: white;
+}
+</style>
+	<head>
+		<title>Publications</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" href="images/logoicon.png">
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header" class="alt">
+				<div class="logo"><a href="index.html"><font color="#FFE122">IDeaS </font><span>Lab</span></a></div>
+				<a href="#menu">Menu</a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="people.html">People</a></li>
+					<li><a href="elements.html">Research</a></li>
+					<li><a href="publications.html">Publications</a></li>
+					<li><a href="partners.html">Partners</a></li>
+					<li><a href="contact.html">Contact us</a></li>
+				</ul>
+			</nav>
+			
+		<!-- Banner -->
+			<section id="banner" style="min-height: 50vh;height: 50vh !important; background-image: url(images/iisc.jpg);">
+				<div class="inner">
+					<header>
+						<h1>Publications</h1>
+					</header>
+					<a href="#main" class="button scrolly" style="background-color:#660000">Click here</a>
+				</div>
+			</section>
+
+		<!-- Main -->
+			<div id="main">
+				<section class="wrapper style1">
+					<div class="inner">
+							<ul>								
+							<div id="myBtnContainer">
+							  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+							  <button class="btn" onclick="filterSelection('Requirement')"> Requirement Engineering and Design for Variety</button>
+							  <button class="btn" onclick="filterSelection('Syntheis')"> Design Synthesis and Creativity</button>
+							  <button class="btn" onclick="filterSelection('Sustainability')"> Eco-Design and Sustainability</button>
+							  <button class="btn" onclick="filterSelection('Knowledge')"> Design Collaboration and Knowledge Management</button>
+							  <button class="btn" onclick="filterSelection('Emotions')"> Product Aesthetics and Design for Emotions</button>
+							  <button class="btn" onclick="filterSelection('Pedagogy')"> Design Pedagogy</button>
+							  <button class="btn" onclick="filterSelection('DRM')"> Design Research Methodology</button>
+							</div>
+
+							<div class="container">
+							  <div class="filterDiv Requirement">BMW</div>
+							  <div class="filterDiv Knowledge Sustainability">Orange</div>
+							  <div class="filterDiv Requirement">Volvo</div>
+							  <div class="filterDiv Knowledge">Red</div>
+							  <div class="filterDiv Requirement Syntheis">Mustang</div>
+							  <div class="filterDiv Knowledge">Blue</div>
+							  <div class="filterDiv Syntheis">Cat</div>
+							  <div class="filterDiv Syntheis">Dog</div>
+							  <div class="filterDiv Sustainability">Melon</div>
+							  <div class="filterDiv Sustainability Syntheis">Kiwi</div>
+							  <div class="filterDiv Sustainability">Banana</div>
+							  <div class="filterDiv Sustainability">Lemon</div>
+							  <div class="filterDiv Syntheis">Blessing, L.T.M., and Chakrabarti, A. DRM, A Design Research Methodology, Springer-Verlag, London, 2009.</div>
+							</div>
+							</ul>
+						<!-- Content -->
+						
+					</div>
+				</section>
+				
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="copyright">
+					<ul class="icons">
+						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon fa-google-plus"><span class="label">GooglePlus</span></a></li>
+					</ul>
+					<p>&copy; 2020 IDeaS Lab, <a href="https://cpdm.iisc.ac.in/cpdm/index.php">Centre for Product Design and Manufacturing</a>, <a href="https://www.iisc.ac.in/">, Indian Institute of Science, Bangalore</a>, 560012, INDIA</p>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+			filterSelection("all")
+			function filterSelection(c) {
+			  var x, i;
+			  x = document.getElementsByClassName("filterDiv");
+			  if (c == "all") c = "";
+			  for (i = 0; i < x.length; i++) {
+				w3RemoveClass(x[i], "show");
+				if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+			  }
+			}
+
+			function w3AddClass(element, name) {
+			  var i, arr1, arr2;
+			  arr1 = element.className.split(" ");
+			  arr2 = name.split(" ");
+			  for (i = 0; i < arr2.length; i++) {
+				if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+			  }
+			}
+
+			function w3RemoveClass(element, name) {
+			  var i, arr1, arr2;
+			  arr1 = element.className.split(" ");
+			  arr2 = name.split(" ");
+			  for (i = 0; i < arr2.length; i++) {
+				while (arr1.indexOf(arr2[i]) > -1) {
+				  arr1.splice(arr1.indexOf(arr2[i]), 1);     
+				}
+			  }
+			  element.className = arr1.join(" ");
+			}
+
+			// Add active class to the current button (highlight it)
+			var btnContainer = document.getElementById("myBtnContainer");
+			var btns = btnContainer.getElementsByClassName("btn");
+			for (var i = 0; i < btns.length; i++) {
+			  btns[i].addEventListener("click", function(){
+				var current = document.getElementsByClassName("active");
+				current[0].className = current[0].className.replace(" active", "");
+				this.className += " active";
+			  });
+			}
+			</script>
+	</body>
+</html>
