@@ -7,13 +7,13 @@
 <html>
 <style>
 .filterDiv {
-  background-color: #F2F2F2;
+  background-color: #fafafa;
   color: black;
   width: 100%;
   line-height: auto;
   text-align: justify;
   overflow-wrap: anywhere;
-  margin: 2px;
+  margin: 10px;
   display: none;
   padding:5px;
   
@@ -26,6 +26,11 @@
 .container {
   margin-top: 20px;
   margin-right: 15px;
+  padding:20px;
+  height: 500px;
+  border: 3px outset;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 /* Style the buttons */
@@ -61,7 +66,7 @@
 		<!-- Header -->
 			<header id="header" class="alt">
 				<div class="logo"><a href="index.html"><font color="#FFE122">IDeaS </font><span>Lab</span></a></div>
-				<a href="#menu">Menu</a>
+				<a href="#menu"></a>
 			</header>
 
 		<!-- Nav -->
@@ -90,7 +95,7 @@
 			<div id="main">
 				<section class="wrapper style1">
 					<div class="inner">
-							<ul>								
+															
 							<div id="myBtnContainer">
 							  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
 							  <button class="btn" onclick="filterSelection('Requirement')"> Requirement Engineering and Design for Variety</button>
@@ -100,24 +105,222 @@
 							  <button class="btn" onclick="filterSelection('Emotions')"> Product Aesthetics and Design for Emotions</button>
 							  <button class="btn" onclick="filterSelection('Pedagogy')"> Design Pedagogy</button>
 							  <button class="btn" onclick="filterSelection('DRM')"> Design Research Methodology</button>
+							  <button class="btn" onclick="filterSelection('Design')"> Design Research</button>
 							</div>
 
 							<div class="container">
-							  <div class="filterDiv Requirement">BMW</div>
-							  <div class="filterDiv Knowledge Sustainability">Orange</div>
-							  <div class="filterDiv Requirement">Volvo</div>
-							  <div class="filterDiv Knowledge">Red</div>
-							  <div class="filterDiv Requirement Syntheis">Mustang</div>
-							  <div class="filterDiv Knowledge">Blue</div>
-							  <div class="filterDiv Syntheis">Cat</div>
-							  <div class="filterDiv Syntheis">Dog</div>
-							  <div class="filterDiv Sustainability">Melon</div>
-							  <div class="filterDiv Sustainability Syntheis">Kiwi</div>
-							  <div class="filterDiv Sustainability">Banana</div>
-							  <div class="filterDiv Sustainability">Lemon</div>
-							  <div class="filterDiv Syntheis">Blessing, L.T.M., and Chakrabarti, A. DRM, A Design Research Methodology, Springer-Verlag, London, 2009.</div>
+							
+							  <ul class="filterDiv Requirement">
+							  <li>Madhusudanan N and Amaresh Chakrabarti, Combining product information and process information to build virtual assembly situations for knowledge acquisition, Proceedings of the ASME 2011 World Conference on Innovative Virtual Reality WINVR2011, July 27-29, 2011, Milan, Italy.</li>
+							  <li>Lopez, B.M., and Chakrabarti, A. A Model of Decision-Making Knowledge in Conceptual Design, International Conference on Engineering Design (ICED07), Paris, France, August 2007.</li>
+							  <li>Chakrabarti, A. A solution oriented approach to requirements identification, International Conference on Engineering Design (ICED05), Melbourne, Australia, August, 2005.</li>
+							  <li>Chakrabarti, A. Processes for Effective Satisfaction of Requirements by Individual Designers and Design Teams, in Human Behaviour in Design, U. Lindemann (Ed.), Springer Verlag, 2003, (also Invited paper in International Symposium on Human Behaviour in Design, Munich, Germany, 9-11 March 2003).</li>
+							  <li>Patki, U., Chakrabarti, A., and Nidamarthi, S. A Method for Supporting Design for Variety, Proceedings of Intl. Conference on Engineering Design (ICED03), Stockholm, 2003.</li>
+							  <li>Nidamarthi, S., Chakrabarti, A., and Bligh, T.P. Improving Requirement Satisfaction Ability of the Designer, Proc. of the Intl. Conference on Engineering Design (ICED01), Design Research – Theories, Methodologies, and Product Modelling, pp-237-244, Glasgow, 2001.</li>
+							  <li>Chakrabarti, A. Deep Understanding and Problem Solving Using Function Structures: A Case Study, Proc. Intl. Conference in Engineering Design, Vol. 3, pp-71-76, Tampere, 1997.</li>
+							  <li>Chakrabarti, A. Reasoning with Shapes: A Case Study, Annual Meeting of the CAD Group, Japan Society of Mechanical Engineers, Tokyo, November 1997.</li>
+							  <li>Nidamarthi, S., Chakrabarti, A., and Bligh, T.P. The Significance of Co-evolving Requirements and Solutions in the Design Process, Proc. Intl. Conference in Engineering Design, Tampere, Vol 1, pp-227-230, 1997.</li>
+							  <li>Chakrabarti, A. and Wolf, B. Reasoning with Shapes: Some Observations from a Case Study, Proceedings of the 1995 ASME Design Engineering Technical Conferences (presented at the 9th International Conference on Design Theory and Methodology at Boston in 1995), DE-Vol. 83, Vol.2, pp-315-322, 1995.</li>
+							  <li>Chakrabarti, A. Requirements Identification: A Central Issue in Design Research, Proceedings of the East-West International Conference on Information Technology in Design, Vol. 1, pp-108-117, Moscow, September 1994.</li>
+							  <li>Chakrabarti, A. and Wolf, B. Reasoning with Shapes: Preliminary Observations of a Case Study, Workshop notes for the “Reasoning with Shapes? Workshop, AI in Design Conference, 1994.</li>
+							  </ul>
+							  <ul class="filterDiv Syntheis">
+							  <li>Chakrabarti, A., Regno, R., Sarkar, B., and Srinivasan, V. A tool for automated synthesis and side-effects detection in sensor designs, International Conference on Research into Design (ICoRD’11), Bangalore, January, 2011.</li>
+							<li>Sarkar, P. and Chakrabarti, A. Assessing Design Creativity: Measures of Novelty, Usefulness and Design Creativity, Design Studies Journal (In Press).</li>
+							<li>Chakrabarti, A. Motivation as a Major Direction for Design Creativity Research, Toshitaru Taura (Editor), First International Conference on Design Creativity, Springer, 2010</li>
+							<li>Chakrabarti, A., and Shu, Li. Guest Editorial: Biologically Inspired Design, Amaresh Chakrabarti, And Li Shu (Eds.), AI EDAM, Vol.24, No.4, 453–454, 2010, DOI:10.1017/S0890060410000326.</li>
+							<li>Liu, Y.C., and Chakrabarti, A. Investigation of Design Heuristics for Pruning the Number of Mechanism Solutions in Computer-Based Conceptual Design, 2nd International Conference on Computer and Automation Engineering (ICCAE 2010), Feb 26 - 28, 2010, Singapore.</li>
+							<li>Sartori, J., Pal, U., and Chakrabarti, A. A Methodology for Supporting 'Transfer' in Biomimetic Design, Amaresh Chakrabarti, And Li Shu (Eds.), AI EDAM, Vol.24, No.4, 483–505, 2010 DOI:10.1017/S0890060410000351.</li>
+							<li>Srinivasan, V., and Chakrabarti, A. Supporting Process and Product Knowledge in Biomimetic Design, Special issue on Design in Nature, Ille C. Gebeshuber and Hisham Abdel-Aal (eds.), Intl. Journal of Design Engineering (IJDE), 2010 (in Press).</li>
+							<li>Srinivasan, V., and Chakrabarti, A. An Integrated Model of Designing, Special Issue on Knowledge Based Design, Ashok K. Goel and Andrés Gómez de Silva Garza (eds.), ASME Journal for Information in Science and Engineering (JCISE), September 2010; DOI: 10.1115/1.3467011.</li>
+							<li>Srinivasan, V., and Chakrabarti, A. Investigating Novelty-SAPPhIRE Relationships in Engineering Design, Special Issue on Creativity: Simulation, Stimulation and Studies, Mary Lou Maher, Yong Se Kim and Nathalie Bonnardel (Eds.), AI EDAM, Vol. 24, No. 2, 161-178, 2010, DOI: 10.1017/S089006041000003X.</li>
+							<li>Srinivasan, V., Pal, U., Ranjan, B.S.C., Ojha, S.P., Chakrabarti, A., and Ranganath, R. Development of Novel Concepts for a Lunar Vehicle Mobility System Using a Systematic Design Framework and IDEA-INSPIRE, 10th National Seminar and Exhibition on Aerospace and Related Mechanisms, Vikram Sarabhai Space Centre, Thiruvananthapuram, November, 2010.</li>
+							<li>Chakrabarti, A. Design Creativity Research at IdeasLab, IISc, Raghavan, N. R. Srinivasa, and Cafeo, John A. (Eds.), The Art and Science Behind Successful Product Launches, Springer, 2009.</li>
+							<li>Chakrabarti, A. Supporting Biomimetic and Artificial Inspiration of New Ideas for Novel Micro and Nano-systems design, 4th Indo-Japan Seminar, Pune, 8-15 March 2009.</li>
+							<li>Chakrabarti, A., Ojha, S.P., Pal, U., Ranjan, B.S.C., Srinivasan, V., Ranganath, R. Exploring Serially Connected Multi-Tracked All-Terrain Vehicles for Improved Obstacle Climbing Performance, 14th National Conference on Machines and Mechanisms (NaCoMM09), NIT Durgapur, 17-18 December, 2009.</li>
+							<li>Chakrabarti, A., Srinivasan, V., Pal, U., Ranjan, B.S.C., Ojha, S.P., Ranganath, R., Nataraju, B.S. Systematic Conceptual Design of a Lunar Vehicle Mobility System using “IDEA-INSPIRE?, E-Newsletter, Indian National Society for Aerospace and Related Mechanisms (INSARM), Bangalore Chapter, 3(3-4), August-November 2009.</li>
+							<li>Mulet, E., Chakrabarti, A., Chulvi, V., Lopez, B.M., Gonzalez, M.C., Porcar, A., Galan, J. How Strongly Does Functional Analysis Influence Creativity?, AIEPRO 2009, Bandoz, Spain, 2009.</li>
+							<li>Sarkar, P., and Chakrabarti, A. Analyzing Creativity Methods, Research into Design – Supporting Multiple Facets of Product Development, A Chakrabarti (Ed.),3-10, 2009.</li>
+							<li>Srinivasan, V. and Chakrabarti, A. Designing Novel Artefacts - A Novel Systematic Framework, Research into Design – Supporting Multiple Facets of Product Development, A Chakrabarti (Ed.),67-75, 2009.</li>
+							<li>Srinivasan, V., and Chakrabarti, A. An Empirical Evaluation of Novelty-Sapphire Relationship, Proceedings of the ASME 2009 International Design Engineering Technical Conferences \& Computers and Information in Engineering Conference, IDETC/CIE 2009, San Diego, California, USA August 30 - September 2, 2009.</li>
+							<li>Srinivasan, V., and Chakrabarti, A. SAPPhIRE – an Approach to Analysis and Synthesis, 17th International Conference on Engineering Design (ICED09), Stanford, USA, 23-27 August, 2009.</li>
+							<li>Todeti, S.R. and Chakrabarti, A. How Engineers Synthesize Multiple State Mechanical Devices – an Observational Study, Research into Design – Supporting Multiple Facets of Product Development, A Chakrabarti (Ed.), 35-44, 2009.</li>
+							<li>Todeti, S.R., and Chakrabarti, A. an Empirical Model of the Process of Synthesis of Multiple State Mechanical Devices, 17th International Conference on Engineering Design (ICED09), Stanford, USA, 23-27 August, 2009.</li>
+							<li>Chakrabarti, A., Srinivasan, V., Pal, U., Ranganath, R., Nataraju, B.S. Progress in Systematic conceptual design of a lunar vehicle mobility system using “IDEA-INSPIRE?, Annual Symposium, ISRO-IISc Space Technology Cell, January, 2008.</li>
+							<li>Sarkar, P. and Chakrabarti, A. Studying Engineering Design Creativity- Developing a Common Definition and Associated Measures, John Gero (Ed.), Studying Design Creativity, Springer, 2008 (also Invited Paper at the NSF Workshop on Studying Design Creativity – Aix-en-Provonce, France, 2008).</li>
+							<li>Sarkar, P., and Chakrabarti, A. The effect of representations of triggers on design outcomes, Special Issue on Multi-Modal Design, A Goel, R Davis and J Gero (Eds.), Artificial Intelligence in Engineering Design, Analysis and Manufacturing (AI EDAM), 22, 101-116, Spring 2008.</li>
+							<li>Sarkar, P. Phaneendra, S., and Chakrabarti, A. Developing Engineering Products Using Inspiration From Nature, ASME J for Information in Science and Eng (JCISE), 8(3), September 2008.</li>
+							<li>Srinivasan, V., and Chakrabarti, A., Design for Novelty – A Framework?, International Design Conference (Design2008), Dubrovnik, May 2008.</li>
+							<li>Chakrabarti, A. Research in Eng Design Creativity-Some Recent Findings, Keynote Paper at the Workshop on Design Creativity – Special Interest Group on Design Creativity, International Conference on Engineering Design (ICED07), Paris, France, 2007.</li>
+							<li>Chakrabarti, A., and Singh, V. A Method for Structure Sharing to Enhance Resource-Effectiveness, Journal of Engineering Design, 18(1), 73-91, February 2007.</li>
+							<li>Rao, T.S., and Chakrabarti, A. An Empirical Study of Synthesis of Multiple State Devices by Engineering Designers, National Conference on Machines and Mechanisms (NaCoMM07), Bangalore, December 2007.</li>
+							<li>Sarkar, P., and Chakrabarti, A. Development of a Method for Assessing Design Creativity, International Conference on Engineering Design (ICED07), Paris, France, August 2007.</li>
+							<li>Sarkar, P., and Chakrabarti, A. Understanding Search in Design, International Conference on Engineering Design (ICED07), Paris, France, August 2007.</li>
+							<li>Sarkar, P., and Chakrabarti, A. Developing Novel Technical Systems using Ideas from Nature, International Conference on Engineering Design (ICED07), Paris, France, August 2007.</li>
+							<li>Sarkar, P., and Chakrabarti, A. A tool for Supporting Protocol Analysis, International Conference on Engineering Design (ICED07), Paris, France, August 2007.</li>
+							<li>Srinivasan, V., and Chakrabarti, A. GEMS of SAPPhIRE: A Framework for Designing?, National Conference on Machines and Mechanisms (NaCoMM07), Bangalore, December 2007.</li>
+							<li>Chakrabarti, A. Defining and Supporting Design Creativity, Keynote Paper, Proceedings of Design 2006 – International Design Conference, Dubrovnik, Croatia, 2006.</li>
+							<li>Chakrabarti, A., and Taura, T. Computational Support of Synthesis and Analysis of Behaviour of Artefacts Using Physical Effects: Some Challenges, Proceedings of the Design2006- 9th International Design Conference, Vol 1, 1-8, Dubrovnik, 2006.</li>
+							<li>Escrig , E., Mulet, E., Chakrabarti, A., Nadal, R. Search and Combination Cycles for an Interactive Framework for Supporting Conceptual Design, X Congreso Internacional De Ingenieria De Proyectos, VALENCIA, 13-15 September, 2006.</li>
+							<li>Sarkar, P., and Chakrabarti, A. Determining and measuring product novelty to ascertain innovation in product development cycle, National Conference on Design for Product Life Cycle – 2006, Birla Institute Of Technology And Science, Pilani, Rajasthan, India, Feb 17-18, 2006.</li>
+							<li>Sarkar, P., and Chakrabarti, A., 'Assessing Degree of Novelty of Products to Ascertain Innovative Products, in Product Life Cycle Management – Going Beyond Product Development and Delivery', A. Bouras, B. Gurumoorthy and S. Han (Eds.), Inderscience Enterprises, Geneve, pp3-13, 2006. </li>
+							<li>Chakrabarti, A. Some Thoughts on Definition, Influences and Measures for Design Creativity, in in 'Engineering design - theory and practice' - A symposium in honour of Ken Wallace, Clarkson, P.J. and Huhtala, M.J. (Eds.), Engineering Design Centre, University of Cambridge, UK, 2005; also invited paper at the International Symposium on Engineering Design, University of Cambridge, 4-5 April, 2005.</li>
+							<li>Chakrabarti, A., Sarkar, P., Leelavathamma, B., Nataraju, B.S. A Behavioural Model for Representing Biological and Artificial Systems for Inspiring Novel Designs, International Conference on Engineering Design (ICED05), Melbourne, Australia, August, 2005.</li>
+							<li>Chakrabarti, A., Sarkar, P., Leelavathamma, B., Nataraju, B.S. A Functional Representation for Aiding Biomimetic and Artificial Inspiration of New Ideas, AI EDAM 19(2): 113-132, 2005.</li>
+							<li>Chakrabarti, A., Sarkar, P., Phaneendra, S. and Nataraju, BS. A Behavioural Model for Representing Natural and Artificial Systems for Inspiring Novel Designs, 5th National Seminar and Exhibition on Aerospace and Related Mechanisms, ISRO Satellite Centre, Bangalore, 18-19 November, 2005.</li>
+							<li>Chakrabarti, A., and Singh, V. A method for structure sharing to enhance resource effectiveness, International Conference on Engineering Design (ICED05), Melbourne, Australia, August, 2005.</li>
+							<li>Stone, R.B., and Chakrabarti, A. Special Issue: Engineering Applications of Representations of Function – Part 1, AI EDAM 19(3): 137-137, 2005.</li>
+							<li>Chakrabarti, A. A new Approach to Structure Sharing, ASME JCISE, 1(1), 1-78, 2004.</li>
+							<li>Chakrabarti, A. Towards a measure for Assessing Creative Effects of a Creativity Technique, Proceedings of the Intl. Conference on Engineering Design (ICED03), Stockholm, 2003.</li>
+							<li>Chakrabarti, A., and Khadilkar, P. A Measure for Assessing Product Novelty, Proc. of the Intl. Conference on Engineering Design (ICED01), Proc of the International Conf. on Engg. Design (ICED03), Stockholm, 2003.</li>
+							<li>Liu, Y.C., Chakrabarti, A., and Bligh, T.P. Towards an Ideal Approach for Concept Generation, Design Studies, 24(4), 341-355, 2003.</li>
+							<li>Chakrabarti, A. Editor’s Introduction: Engineering Design Synthesis, Engineering Design Synthesis: Understanding, Approaches and Tools, pp-vii-xvi, Springer, London, 2002.</li>
+							<li>Chakrabarti, A., Langdon, P., Liu, Y.C., and Bligh, T.P. Supporting Compositional Synthesis on Computers, Engineering Design Synthesis: Understanding, Approaches and Tools, pp-179-197, Springer, London, 2002.</li>
+							<li>Chakrabarti, A. Sharing in Design: Categories, Importance and Issues, Proc. of the Intl. Conference on Engineering Design (ICED01), Design Methods for Performance and Sustainability, 563-570, Glasgow, 2001.</li>
+							<li>Chakrabarti, A. Towards Hybrid Methods for Synthesis, Proc. of the Intl. Conference on Engineering Design (ICED01), Design Research – Theories, Methodologies, and Product Modelling, pp-379-386, Glasgow, 2001.</li>
+							<li>Chakrabarti, A. Improving Efficiency of Procedures for Compositional Synthesis Using Bi-Directional Search, AI in Engineering Design, Analysis and Manufacturing, 15, 1, 67-80, 2001.</li>
+							<li>Chakrabarti, A., and Bligh, T.P. A Scheme for Functional Reasoning in Mechanical Conceptual Design, Design Studies, 22, 6, 493-517, 2001.</li>
+							<li>Chakrabarti, A., and Regno, R. A New Approach to Structure Sharing, Proc. of the Intl. Conf. on Engineering Design (ICED01), Design Methods for Performance and Sustainability, pp-155-162, Glasgow, 2001.</li>
+							<li>Langdon, P., and Chakrabarti. Improving Access to Design Solution Spaces Using Visualisation and Data Reduction Techniques, Proc. of the International Conference on Engineering Design (ICED01), Design Management – Process and Information Issues, pp-3-10, Glasgow, 2001.</li>
+							<li>Chakrabarti, A. Increasing Efficiency of Compositional Synthesis by Improving the Database of its Building Blocks, AI in Engineering Design, Analysis and Manufacturing, 14, 5, pp-403-414, 2000.</li>
+							<li>Chakrabarti, A., and Blessing, L.T.M. A Summary of the 1st Cambridge Design Synthesis Workshop, Synthesis 2000 Symposium, Japan Society for Promotion of Science, Tokyo, December 2000.</li>
+							<li>Chakrabarti, A. A Product Design Principle, Proc. of the Intl. Conf. on Engineering Design (ICED99), Vol. 2, pp-751-756, Munich, 1999.</li>
+							<li>Chakrabarti, A., and Johnson, A.L. Detecting Side Effects in Solution Principles, Proc. of the Intl. Conference on Engineering Design (ICED99), Vol. 2, pp-661-666, Munich, 1999.</li>
+							<li>Langdon, P., and Chakrabarti, A. Cluster-Based Browsing and Visualisation of Large Mechanical Design Solution Spaces, Accepted for 8th Intl. Conference on Human Computer Interaction (HCI99), Munich, 1999.</li>
+							<li>Liu, Y.C., Chakrabarti, A., and Bligh, T.P. A Strategy for Functional Design, Proc. of the International Conference on Engineering Design (ICED99), Vol. 2, pp-1187-1190, Munich, 1999.</li>
+							<li>Liu, Y.C., Chakrabarti, A., and Bligh, T.P. Transforming Functional Solutions into Physical Solutions, Proc. of the ASME Design Theory and Methodology Conference (DTM99), Las Vegas, Nevada, September 1999.</li>
+							<li>Chakrabarti, A. Supporting two Views of Function in Mechanical Design, Workshop on Functional Modelling and Teleological Reasoning, Fifteenth AAAI National Conference on Artificial Intelligence, Wisconsin, 1998. </li>
+							<li>Chakrabarti, A. A Framework for Browsing Solutions in Breadth and Depth, Technical Report No. CUED/C-EDC/TR62-February 1998, University of Cambridge, 1998.</li>
+							<li>Chakrabarti, A. Generation and Exploration of Conceptual Design Solutions on Computers, Proceedings of the International Seminar and Workshops on Engineering Design in Integrated Product Development, Polish Academy of Sciences, Wroclaw, Poland, 1998.</li>
+							<li>Chakrabarti, A. and Bligh, T.P. Exploring Basicness of Building Blocks for Supporting Innovative Design of Mechanical Systems using the Building Blocks Metaphor, Technical Report No. CUED/C-EDC/TR61-January 1998, University of Cambridge, 1998. </li>
+							<li>Chakrabarti, A. Deep Understanding and Problem Solving Using Function Structures: A Case Study, Proc. Intl. Conference in Engineering Design, Vol. 3, pp-71-76, Tampere, 1997.</li>
+							<li>Chakrabarti, A., Johnson, A.L., and Kiriyama, T. An Approach to Automated Synthesis of Solution Principles for Micro-Sensor Designs, Proc. Intl. Conference in Engineering Design, Vol. 2, pp-125-128, Tampere, 1997.</li>
+							<li>Chakrabarti, A. Evaluation of the Program for Synthesis of Solution Principles, Proc. Workshop on Collaborative Research into Environmental Design and Production Technologies, Cambridge, UK, December 1996.</li>
+							<li>Chakrabarti, A., and Blessing, L.T.M. Special Issue: Representing Functionality in Design, AI in Engineering Design, Analysis and Manufacturing, Vol. 10, No. 4, pp-251-253, 1996.</li>
+							<li>Chakrabarti, A. and Bligh, T.P. Functional Synthesis of Solution-Concepts in Mechanical Conceptual Design. Part II: Kind Synthesis, Research in Engg. Design, 8, 1, pp-52-62, 1996.</li>
+							<li>Chakrabarti, A. and Bligh, T.P. Functional Synthesis of Solution-Concepts in Mechanical Conceptual Design. Part III: Spatial Configuration, Research in Engineering Design, Vol. 8, No. 2, pp-116-124, 1996.</li>
+							<li>Chakrabarti, A., and Bligh, T.P. An Approach to Functional Synthesis of Design Concepts: Theory, Application, and Emerging Research Issues, AI in Engineering Design, Analysis and Manufacturing, Vol. 10, No. 4, pp-313-331, 1996.</li>
+							<li>Chakrabarti, A., and Johnson, A.L. An Approach to Synthesis of Solution Principles for Transducer Designs, Proceedings of the Workshop on Collaborative Design Environment for the Design of Intelligent Artifacts, Tokyo, January 1996.</li>
+							<li>Chakrabarti, A. and Tang, M.X. Generating Conceptual Solutions on FuncSION: Evolution of a Functional Synthesiser, Artificial Intelligence in Design ’96, J.S. Gero and F. Sudweeks (Eds.), pp-603-622, Kluwer Academic Publishers, 1996.</li>
+							<li>Chakrabarti, A. Towards a framework for supporting Generation and Exploration of Solutions in Conceptual Design, Proceedings of the RACE-EDC Joint Workshop on Micromechanisms, Tokyo, January 1995.</li>
+							<li>Chakrabarti, A., and Bligh, T.P. Generation and Exploration of Conceptual Design Solutions on Computers, Proceedings of the International Conference on Advances in Mechanical Engineering, Bangalore, India, pp-321-331, December 1995.</li>
+							<li>Chakrabarti, A. Supporting Functional Reasoning in Design, Workshop notes for the “Representing Function in Design? Workshop in AI in Design Conference, Lausanne, 1994.</li>
+							<li>Chakrabarti, A. The work on the Functional Synthesis software appeared as a cover article (written by its editor Dave Wilson) in the Design Engineering Magazine as: Software offers various design alternatives, Design Engineering, pp-61-68, October 1994.</li>
+							<li>Chakrabarti, A. and Bligh, T.P. A Two-Step Approach to Conceptual Design of Mechanical Devices, Artificial Intelligence in Design ‘94, J.S. Gero and F. Sudweeks (Eds.), pp-21-38, Kluwer Academic Publishers, 1994.</li>
+							<li>Chakrabarti, A. and Bligh, T.P. Functional Synthesis of Solution-Concepts in Mechanical Conceptual Design. Part I: Knowledge Representation, Research in Engineering Design, Vol. 6, No. 3, pp-127-141, 1994.</li>
+							<li>Chakrabarti, A. Towards a Theory for Functional Reasoning, Proceedings of the International Conference in Engineering Design (ICED93), The Hague, Vol. 1, pp-1-8, 1993.</li>
+							<li>Chakrabarti, A. and Bligh, T.P. A Knowledge-based System for Synthesis of Single Input Single Output Systems in Mechanical Conceptual Design, Accepted for Publication in the Proceedings of the Fourth Joint Europe-USA. Conference on AI and Expert Systems Applications (EXPERSYS-92), Houston, USA, 1-2 October 1992.</li>
+							<li>Chakrabarti, A., Bligh, T.P. and Holden, T. Towards a Decision-Support Framework for the Embodiment Phase of Mechanical Design, International Journal for AI in Engineering, Vol. 7, No. 1, pp-21-36, 1992.</li>
+							<li>Chakrabarti, A. Functional Synthesis of Single Input Single Output Systems in Mechanical Conceptual Design, in Technical Report no. CUED/C-EDC/TR8-October 1991, University of Cambridge, 1991.</li>
+							<li>Chakrabarti, A. and Bligh, T.P. Towards a decision-Support Framework for Mechanical Conceptual Design, Proceedings of the International Conference in Engineering Design, Zurich, Vol. 1, pp-384-389, 1991.</li>
+
+							  </ul>
+							  <ul class="filterDiv Sustainability">
+							  <li>Suman Devadula and Amaresh Chakrabarti, Design Strategies for Circular Economy, ICED, 2015.
+							  </li>
+							  <li>Suman Devadula, B Gurumoorthy and Amaresh Chakrabarti, Design for Sustainability: Case of designing an urban household organic waste management system, Current Science (2015).</li>
+							  <li>Harivardhini.S, and Chakrabarti, A., Expanding DRM framework to Formulate Supreme Causal Models from Research articles in the Area of Product Disassembly, Internation Conf on Research into Design 2015.</li>
+							  <li>Harivardhini.S, and Chakrabarti, A.,Comparison of disassembly effort and ergonomic hazards in dismantling electronic appliances by formal and informal recycling sectors in developing countries, Int. J. Product Lifecycle Management, Vol. 8, No. 2, 2015.</li>
+							  <li>Harivardhini.S, and Chakrabarti, A., E-waste Dismantling: Profitable at the cost of Occupational Hazard?, IEEE Conference on Technologies for Sustainability, 2015.</li>
+							  <li>Suman Devadula and Amaresh Chakrabarti, Technology-led human development: From ability to capability, Design for Sustainable Well-being and Empowerment, 2014.</li>
+							  <li>Suman Devadula and Amaresh Chakrabarti, Understanding Sustainable Technology and Human Behaviour: Adolescence to Adulthood!, Proceedings of the International Symposium on Sustainable Systems and Technologies, v2 (2014).</li>
+							  <li>Suman Devadula, D Ganesh, B Gurumoorthy and Amaresh Chakrabarti, Design of a sustainable urban household organic waste handling system, Design for Sustainable Well-being and Empowerment, 2014.</li>
+							  <li>Harivardhini S and Chakrabarti, A., Analysis of dismantling processes for assessing disassembly effort and ergonomic hazards at the end of life of electronic appliances, ARPN Journal of Engineering and Applied Sciences, VOL. 9, NO. 3, MARCH 2014</li>
+							  <li>Suman Devadula and Amaresh Chakrabarti, Sustainability and Research into interactions, ICoRD 13, 2013.</li>
+							  <li>Harivardhini.S, and Chakrabarti, A. , Analyzing Conflicts between Product Assembly and Disassembly for Achieving Sustainability, Internation Conf on Research into Design 2013.</li>
+							  <li>Chakrabarti, A., Rachuri, S., Sarkar, P., and Kota, S. (Editors). Developing Sustainable Products, Services and Manufacturing Systems, Research Publishing Services, Singapore, 2010.</li>
+							  <li>Kota, S., and Chakrabarti, A. Idea-Sustain – An Aid for Environmentally Friendly Product Lifecycle Design, A Chakrabarti, S. Rachuri, P. Sarkar, S. Kota (Eds.), Designing Sustainable Products, Services and Manufacturing Systems, Research Publishing Services, Singapore, pp. 112-122, 2010.</li>
+							  <li>Kota, S., and Chakrabarti, A., A Method For Estimating The Degree Of Uncertainty With Respect To Life Cycle Assessment During Design, Special Issue on Sustainable Design, Steven J. Skerlos, Alexander H. Slocum,Karthik Ramani, (Eds.), ASME Journal of Mechanical Design, Vol. 132, September 2010.</li>
+							  <li>Kota, S., and Chakrabarti, A. ACLODS – A Holistic Framework For Environmentally Friendly Product Lifecycle Design, Glabal Product Development, A Bernard (Ed.), Springer, 2010 (In Press).</li>
+							  <li>Kota, S., and Chakrabarti, A. ACLODS – A Holistic Framework For Environmentally Friendly Product Lifecycle Design, 20th CIRP International Design Conference (CIRPDesign2010), Nantes, France, 2010.</li>
+							  <li>Kota, S. and Chakrabarti, A. Understanding the Needs of Designers for Developing Environmentally Friendly Products, Research into Design – Supporting Multiple Facets of Product Development, A Chakrabarti (Ed.), 128-135, 2009.</li>
+							  <li>Kota, S., and Chakrabarti, A. A Method for Evaluation of Product Lifecycle Alternatives under Uncertainty, 17th International Conference on Engineering Design (ICED09), Stanford, USA, 24-27 August, 2009. </li>
+							  <li>Kota, S., and Chakrabarti, A. Development of a Method for Estimating Uncertainty in Evaluation of Environmental Impacts during Design, International Conference on Engineering Design (ICED07), Paris, France, August 2007.</li>
+							  <li> Kota, S., and Chakrabarti, A. A Method for Comparative Evaluation of Product Life Cycle Alternatives under Uncertainty, International Conference on Engineering Design (ICED07), Paris, France, August 2007. </li>
+							  <li>Kota, S., and Chakrabarti, A. Development of A Platform for Supporting Design for Environment, International Conference on Engineering Design (ICED07), Paris, France, August 2007.</li>
+							  <li>Kota, S., and Chakrabarti, A. Use of DfE Methodologies and Tools – Major Barriers and Challenges, International Conference on Engineering Design (ICED07), Paris, France, August 2007.</li>
+							  <li>Kota, S., and Chakrabarti, A. Understanding the evolution of information about product life cycle with respect to life cycle assessment in design, National Conference on Design for Product Life Cycle – 2006, Birla Institute Of Technology And Science, Pilani, Rajasthan, India, Feb 17-18, 2006.</li>
+							  <li>Kota, S., and Chakrabarti, A., 'Understanding the Evolution of Product Life Cycle Information With Respect To Life Cycle Assessment in Design, in Product Life Cycle Management – Going Beyond Product Development and Delivery', A. Bouras, B. Gurumoorthy and S. Han (Eds.), Inderscience Enterprises, Geneve, pp300-316, 2006.</li>
+							  <li>Chakrabarti, A., Kota, S., Rao, N., Chowdary, S., Diwakar, J.E. A Designer Workbench with Real-Time Capture and Reuse of Information on Product Evolution and Rationale, International Conference on Engineering Design (ICED05), Melbourne, Australia, August, 2005. </li>
+							  <li>Chakrabarti, A., Kota, S., Harsha, T., Xavier, W., Diwakar, J.E. Need for a tool for supporting development of products with reduced environmental impacts, National Conference on Advanced Manufacturing and Robotics, (AMR-04), Central Mechanical Engineering Research Institute, Durgapur, 10-11 January, 2004.</li>
+							  <li>Chakrabarti, A., Kota, S., Harsha, T., Diwakar, J.E. Green Product Development as a Vehicle for Delivering Green Science to the Society, in Green Chemistry, RK Sharma et al. (Eds.) CSIR Press, India, (also Invited paper at the Indo-US Symposium on Green Chemistry, University of Delhi, New Delhi, Nov 2003).</li>
+							  </ul>
+							  <ul class="filterDiv Knowledge">
+							  <li>Sarkar, B., Chakrabarti, A., \& Ananthasuresh, G. K. (2016). Synthesis of feedback-based design concepts for sensors. Research in Engineering Design, 1-21.</li>
+							  <li> Uchil, P., \& Chakrabarti, A. (2015). An Interface Between Life Cycle Assessment and Design. In ICoRD'15 Research into Design Across Boundaries Volume 2 (pp. 251-259). Springer India.</li>
+							  <li> Sarkar, B., Chakrabarti, A., \& Ananthasuresh, G. K. (2015). A New Approach to Conceptual Design Synthesis of Sensors. In DS79: Proceedings of The Third International Conference on Design Creativity, Indian Institute of Science, Bangalore.</li>
+							  <li>Sarkar, B., Chakrabarti, A., \& Ananthasuresh, G. K. (2015). Synthesis of conceptual designs for sensors using SAPPhIRE-lite. In DS 80-5 Proceedings of the 20th International Conference on Engineering Design (ICED 15) Vol 5: Design Methods and Tools-Part 1, Milan, Italy, 27-30.07. 15.</li>
+							  <li>Exploring two possible means to identify issues in text, International Conference on Product Lifecycle Management 2015, Doha, Qatar</li>
+							  <li>An Anaphora-Resolution Based Method ToSegmentText For Knowledge Acquisition, International Conference on Product Lifecycle Modelling Simulation and Synthesis, 2015, India</li>
+							  <li>Acharya, Shakuntala, and Amaresh Chakrabarti. SUPPORTING ENVIRONMENTALLY-BENIGN DESIGN-ELUCIDATING ENVIRONMENTAL IMPACT PROPAGATION IN CONCEPTUAL DESIGN PHASE BY SAPPHIRE MODEL OF CAUSALITY. In DS 80-1 Proceedings of the 20th International Conference on Engineering Design (ICED 15) Vol 1: Design for Life, Milan, Italy, 27-30.07. 15.</li>
+							  <li>Segregating discourse segments from engineering documents, International Conference on Product Lifecycle Management, 2014, Yokoyoko, Japan</li>
+							  <li>Uchil, P., \& Chakrabarti, A. (2013). Communicating life cycle assessment results to design decision makers: Need for an infomration visualization approach. In DS 75-5: Proceedings of the 19th International Conference on Engineering Design (ICED13) Design For Harmonies, Vol. 5: Design for X, Design to X, Seoul, Korea 19-22.08. 2013.</li>
+							  <li>Keshwani, S., Lenau, T. A., Ahmed-Kristensen, S., \& Chakrabarti, A. (2013). Benchmarking bio-inspired designs with brainstorming in terms of Novelty of design outcomes. In ICED13 conference, Seoul Korea August.</li>
+							  <li>Ranjan, B. S. C., V. Srinivasan, and Amaresh Chakrabarti. System-Environment View in Designing. In CIRP Design 2012, pp. 59-70. Springer London, 2013.</li>
+							  <li>Ranjan, BSC and . Chakrabarti A, An extended integrated model of designing, Proceedings of TMCE 2012, May 7, 2012 .</li>
+							  <li>Ranjan BSC, Srinivasan V, Chakrabarti A, Investigation of the Systemic View in Designing, International Conference On Trends in Product Life Cycle, Modeling, Simulation and Synthesis, PLMSS-2011</li>
+							  <li> Chakrabarti, A. “Drowned in Data, Thirsty for Knowledge?, Computer Aided Design, 42, 840, 2010, DOI:10.1016/j.cad.2010.05.002.</li>
+							  <li>Vijaykumar, A.V.G., and Chakrabarti, A. Idea-Retrieve: A Search Tool, In Modelling and Management of Engineering Processes, P. Heisig, P.J. Clarkson, S. Vajna (Eds.), Springer-Verlag, London, 2010.</li>
+							  <li>Vijaykumar, A.V.G., and Chakrabarti, A. Assessment of Design Tools for Knowledge Capture and Reuse, Proc. 1st International Conference on Modelling and Management of Engineering Processes (MMEP10), Cambridge, UK, 2010.</li>
+							  <li>Vijaykumar, A.V.G., and Chakrabarti, A. Assessment of Design Tools for Knowledge Capture and Reuse, In Modelling and Management of Engineering Processes, P. Heisig, P.J. Clarkson, S. Vajna (Eds.), Springer-Verlag, London, 2010.</li>
+							  <li>Chakrabarti, A. Understanding Knowledge Processing Needs of Designers in Industry, Trends in Knowledge Enabled Product Development, Computer Society of India, 2008.</li>
+							  <li>Vijaykumar, A.V.G., and Chakrabarti, A. Understanding the Knowledge Needs of the Designers during Design Process in Industry, Special Issue on Engineering Informatics, ASME J for Information in Science and Eng (JCISE), R Sudarsan and E Subrahmanian (Eds.), 8(1), March 2008, DOI: 10.1115/1.2840776.</li>
+							  <li>Chakrabarti, A., Kota, S., Rao, N., Chowdary, S. A Product Development Platform for Real-time Capture and Reuse of Evolving Product Information, International Journal of Product Life Cycle Management (IJPLM), 2(3), 207-227, 2007.</li>
+							  <li> Vijaykumar, A.V.G., and Chakrabarti, A. Understanding Patterns of Interaction Between Designers during Design Process, International Conference on Engineering Design (ICED07), Paris, France, August 2007.</li>
+							  <li>Vijaykumar, A.V.G., and Chakrabarti, A. Taxonomy for Understanding Knowledge Captured in Documents by Designers, International Conference on Engineering Design (ICED07), Paris, France, August 2007.</li>
+							  <li>Vijaykumar, A.V.G., and Chakrabarti, A.Understanding the Knowledge Needs of the Designer During Design Process in Industry, International Conference on Trends in Product Life Cycle, Modelling, Simulation and Synthesis, Bangalore, 18-20 December, 2006.</li>
+							  <li>Vijaykumar, A.V.G., and Chakrabarti, A. Understanding of knowledge generation, capture and reuse during design process in industry and laboratory settings, National Conference on Design for Product Life Cycle – 2006, Birla Institute of Technology And Science, Pilani, Rajasthan, India, Feb 17-18, 2006.</li>
+							  <li>Vijaykumar, A.V.G., and Chakrabarti, A., 'Understanding of Knowledge Generation During Design Processes in Industry, in Product Life Cycle Management – Going Beyond Product Development and Delivery', A. Bouras, B. Gurumoorthy and S. Han (Eds.), Inderscience Enterprises, Geneve, ISBN 0-907776-26-4 (Print), pp96-112, 2006.</li>
+							  <li>Lindemann, U., Felgen, L., Grieb, J., and Chakrabarti, A. Examining Influence Factors in Cross-Cultural Distributed Design In: H. Bley, H. Jansen, F.-L. Krause, M. Shpitalni: 2. German-Israeli Symposium for Design and Manufacture Berlin, 2005. Stuttgart: Fraunhofer IRB Verlag 2005, S.23-33.</li>
+							  <li>Chakrabarti, A., Felgen, L., Grieb, J., Lindemann, U., Pulm, U., Vijaykumar, A.V.G. The Impact of Cultural Aspects on the Design Process. In: Marjanovic, D. (Ed.): International Design Conference - Design 2004. Dubrovnik, 18.-21.05.2004. Zagreb (Croatia): Sveucilisna tiskara 2004, S.1475-1480.</li>
+							  <li>Langdon, P., and Chakrabarti. Improving Access to Design Solution Spaces Using Visualisation and Data Reduction Techniques, Proc. of the International Conference on Engineering Design (ICED01), Design Management – Process and Information Issues, pp-3-10, Glasgow, 2001.</li>
+							  <li>Langdon, P., and Chakrabarti, A. Browsing a Large Solution Space in Breadth and Depth, Proc. of the International Conference on Engineering Design (ICED99), Vol. 3, pp-1865-1868, Munich, 1999.</li>
+							  <li>Langdon, P., and Chakrabarti, A. Cluster-Based Browsing and Visualisation of Large Mechanical Design Solution Spaces, Accepted for 8th Intl. Conference on Human Computer Interaction (HCI99), Munich, 1999.</li>
+							  <li>Chakrabarti, A. A Framework for Browsing Solutions in Breadth and Depth, Technical Report No. CUED/C-EDC/TR62-February 1998, University of Cambridge, 1998.</li>
+							  <li>Chakrabarti, A. and Wallace, K.M. Development of the Product Model Schema in the Design of Mechanical Systems, EDC Seminar on Modelling the Product, Michael French (Ed.), University of Lancaster, UK, 1992.</li>
+							  <li>Chakrabarti, A. and Bauert, F. A Framework for Identification, Validation and Use of Knowledge for Problem Solving in Conceptual Design, Technical Report no. CUED/C-EDC/TR9-December 1991, University of Cambridge, 1991.</li>
+							  </ul>
+							  <ul class="filterDiv Emotions">
+							  <li>Georgiev, G.V., Taura, T., Chakrabarti, A., and Nagai, Y. Method of Design Through Structuring of Meanings, ASME 2008 International Design Engineering Technical Conferences \& Computers and Information in Engineering Conference (IDETC/CIE 2008), NY, August 3-6 2008.</li>
+							  <li>Chakrabarti, A., and Gupta, A. Design for Emotions, International Conference on Engineering Design (ICED07), Paris, France, August 2007.</li>
+							  </ul>
+							  <ul class="filterDiv Pedagogy">
+							  <li>Chakrabarti, A. A Course of Teaching DRM - A Methodology for Design Research, Special Issue on Design Pedagogy: Representations and Processes, Dan Frey, Bill Birmingham and Clive Dym (Eds.), AI EDAM Vol.24, No.3, 317-334, 2010, DOI:10.1017/S0890060410000223.</li>
+							  <li>Chakrabarti, A. A Postgraduate Course on DRM – A Methodology for Design Research, in Proceedings of the Indo-US Workshop on Design Engineering, Chakrabarti, And Subrahmanian (Eds.), Allied Publishing, Bangalore, 2008.</li>
+							  <li>Chakrabarti, A. Evolution Of The Creative Engineering Design Course: Past, Present And Future, National Symposium on Mechanisms and Design, Indian Institute of Science, Bangalore, India, July 31, 2003.</li>
+							  </ul>
+							  <ul class="filterDiv DRM">
+							  <li>Blessing, L.T.M., and Chakrabarti, A. DRM, A Design Research Methodology, Springer-Verlag, London, 2009.</li>
+							  <li>Blessing, L.T.M., and Chakrabarti, A. DRM: A Design Research Methodology, in International Conference on The Science of Design - The Scientific Challenge for the 21st Century, INSA, Lyon, France, 15-16, 2002.</li>
+							  <li>Chakrabarti, A. Position Statement on the Nature of Theories Sought in Design Research, Workshop on Design Theory, Intl. Conf. on Engineering Design (ICED01), Glasgow, 2001.</li>
+							  <li>Chakrabarti, A., and Blessing, L.T.M. Position Statement on Nature of Methodology for Design Research, Workshop on Design Research Methodology, Intl. Conf. on Engineering Design (ICED01), Glasgow, 2001.</li>
+							  <li>Nidamarthi, S., Chakrabarti, A., and Bligh, T.P. Techniques for Research Method Validation in Protocol Studies, Proc. of the Intl. Conference on Engineering Design (ICED99), Vol. 3, pp-1571-1576, Munich, 1999.</li>
+							  <li>Blessing, L.T.M., Chakrabarti, A., and Wallace, K.M. An Overview of Design Studies in Relation to a Design Research Methodology, Proceedings of the Darmstadt Symposium on Designers: the Key to Successful Product Development, Darmstadt, 3-5 December 1997.</li>
+							  <li>Blessing, L.T.M., Chakrabarti, A. and Wallace, K.M. An Overview of Design Studies in Relation to a Design Research Methodology, Designers: the Key to Successful Product Development, E. Frankenberger, P. Badke-Schaub and H. Birkhofer (Eds.), Springer-Verlag, 1998 (Also Invited paper for the International Symposium on Designers: the Key to Successful Product Development, TU Darmstadt, 3-5 December 1997).</li>
+							  <li>Blessing, L.T.M., Chakrabarti, A., and Wallace, K.M. A Design Research Methodology, Proceedings of the International Conf. in Engineering Design, Prague, Vol.1, pp50-55, 1995.</li>
+							  <li>Chakrabarti, A., Murdoch, T.N.S., and Wallace, K.M. Towards a Framework for a Glossary of Engineering Design Terms, Proc. of the International Conference in Engineering Design, Prague, Vol. 1, pp-185-186, 1995.</li>
+							  <li>Blessing, L.T.M. and Chakrabarti, A. Nature and Role of Theories in AI in Design Research Based on a Design Research Methodology, Workshop notes for the “Nature and Role of Theories in AID Research? Workshop in AI in Design Conference, Lausanne, 1994.</li>
+							  <li>Chakrabarti, A. A Framework for a Glossary of Engineering Design Terms, Technical Report No. CUED/C-EDC/TR18-June 1994, University of Cambridge, 1994.</li>
+							  <li>Chakrabarti, A., Murdoch, T.N.S. and Edwards, K.L. Implementation of the Framework for a Glossary of Engineering Design Terms, Technical Report No. CUED/C-EDC/TR24-October 1994, University of Cambridge, 1994.</li>
+							  <li>Blessing, L.T.M., Chakrabarti, A., and Wallace, K.M. Some Issues in Engineering Design Research, Open University / S.E.R.C. “Design Methods�? Workshop, The Open University, 18 November 1992.</li>
+							  </ul>
+							   <ul class="filterDiv Design">
+							  <li>Keshwani.S and Chakrabarti.A, Influence of analogical domains and abstraction levels on novelty of designs, The Third International Conference on Design Creativity (3rd ICDC) Bangalore, India, 12th-14th January 2015.</li>
+							  <li>Chakrabarti, A. (Editor). Research into Design: Supporting Multiple Facets of Product Development, Research Publishing Services, Singapore, 2009.</li>
+							  <li>Chakrabarti, A. An Overview of Design Research at IdeasLab, in Proceedings of the Indo-US Workshop on Design Engineering, Chakrabarti, And Subrahmanian (Eds.), Allied Publishing, Bangalore, 2008.</li>
+							  <li>Chakrabarti, A., and Subrahmanian, E. (Editors). Proceedings of the Indo-US Workshop on Design Engineering, Allied Publishing, Bangalore, 2008.</li>
+							  <li>Chakrabarti, A. The Future of Product Development in India, in The Future of Product Development:, F-L Krause (Eds.), Springer Verlag, Berlin Heidelberg, 2007 (also Keynote paper at the Proceedings of the 17th CIRP Design Conference, Berlin, 26-28 March, 2007).</li>
+							  <li>Chakrabarti, A. A Summary of Papers in Session on Computational Support on Conceptual Design, International Conf. on Engineering Design (ICED2005), Melbourne, Australia, 2005.</li>
+							  <li>Blessing, L.T.M., Upton, N.K., Chakrabarti, A., Nowack, M., Burgess, S., Johnson, A.l., and Weaver, P. Applying Systematic Design: The Flight Refuelling Probe Project, Technical Report No. CUED/C-EDC/TR48-January 1997, University of Cambridge, 1997.</li>
+							  <li>Chakrabarti, A. The Engineering Design Process, Int. J of Mechanical Engineering Education, Vol. 23, No. 2, pp-142-144, 1995.</li>
+							  <li>Chakrabarti, A. Engineering Design Methods: Strategies for Product Design, Materials and Design, Vol. 16, No. 2, pp-122-123, 1995.</li>
+							  <li>Chakrabarti, A. and Abel, C. The Mobile Arm Support Project: Evolution of the Management, Design, Tools, and Documentation Processes, Proceedings of the 16th Annual International Conference of the IEEE Engineering in Medicine and Biology Society Conference (Advances: New Opportunities for Biomedical Engineers), Vol. 1, pp-486-487, Baltimore, Maryland, USA, November 3-6, 1994.</li>
+							  <li>Chakrabarti, A. and Abel, C.A. The Mobile Arm Support Project as a Test-Bed for Design Research at the Cambridge EDC, In Jackson, R., and Chakrabarti, A. (Eds.): Proceedings of the IIIrd Workshop on Rehabilitation Engineering, (Cambdridge University Engineering Design Centre Technical Report no. CUED/C-EDC/TR17-June 1994), Selwyn College, Cambridge, 1994.</li>
+							  <li>Jackson, R. and Chakrabarti, A.(Editors). Design Methods in Rehabilitation Engineering: Proceedings of the Third Workshop on Rehabilitation Robotics, Selwin College, Cambridge, Published as Technical Report No. CUED/C-EDC/TR17-June 1994, University of Cambridge, 1994.</li>
+							  <li>Shrinivasa, U. and Chakrabarti, A. Design of an Expert System for Signature Analysis, Expert Systems for management and Engineering, E. Balagurusamy and J.A.M. Howe (Eds.), Section II: Expert Systems Architecture, Techniques and Tools, Ellis Horwood, Chichester, England, pp-185-196, 1990.</li>
+							  </ul>
 							</div>
-							</ul>
+							
 						<!-- Content -->
 						
 					</div>
