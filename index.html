@@ -5,7 +5,16 @@
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 -->
 <style>
+.imggallery {
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+}
 
+.imggallery:hover {
+    filter: none;
+    -webkit-filter: grayscale(100%);
+	transition: all 1s ease-in-out;
+}
 </style>
 <html>
 	<head>
@@ -95,10 +104,10 @@
 					<section class="wrapper style1">
 						<div class="inner">
 							<header class="align-center">
-								<h3>News & Events</h3>
+								<h3>Photo Gallery</h3>
 								<p></p>
 							</header>
-							<div class="flex flex-3">
+							<!--<div class="flex flex-3">
 								<div class="col align-center">
 									<div class="image fit">
 										<img src="images/openday2.jpeg" alt="" />
@@ -120,6 +129,28 @@
 									<p style="color:black">7th International Conference on Research Into Design 2019 @IISc</p>
 									<a href="https://cpdm.iisc.ac.in/icord19/" class="button" style="background-color:#660000">Learn More</a>
 								</div>
+							</div>-->
+							<!--Photo Grid--> 
+							<div class="rowgallery"> 
+							  <div class="columngallery">
+								<img class="imggallery" src="images/openday2.jpeg" style="width:100%">
+								<img class="imggallery" src="images/group.jpg" style="width:100%">
+								
+							  </div>
+							  <div class="columngallery">
+								<img class="imggallery" src="images/people.jpg" style="width:100%">
+								<img class="imggallery" src="images/g1.jpg" style="width:100%">
+								<img class="imggallery" src="images/g2.jpg" style="width:100%">
+							  </div>
+							  <div class="columngallery">
+								<img class="imggallery" src="images/g3.jpg" style="width:100%">
+								<img class="imggallery" src="images/g4.jpg" style="width:100%">
+							  </div>
+							  <div class="columngallery">
+								<img class="imggallery" src="images/g5.jpg" style="width:100%">
+								<img class="imggallery" src="images/g6.jpg" style="width:100%">
+							  </div>
+
 							</div>
 						</div>
 						
